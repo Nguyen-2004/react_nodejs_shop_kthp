@@ -5,11 +5,6 @@ import Boom from 'boom';
 import cors from 'cors';
 import routes from './routes';
 
-
-
-
-
-
 const app = express();
 
 app.use(cors());
@@ -21,7 +16,6 @@ app.use(routes);
 app.use((req, res, next) => {
   return next(Boom.notFound('This route does not exist.'));
 });
-
 
 app.use((err, req, res, next) => {
   console.log(err);
