@@ -17,9 +17,17 @@ function ForgotPassword() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic xử lý gửi email reset mật khẩu
+
+    if (!email.trim()) {
+      alert("Vui lòng nhập email!");
+      return;
+    }
+
+    // Có thể thêm kiểm tra định dạng email ở đây
+
     setSubmitted(true);
   };
+
 
   return (
     <Flex align="center" width="full" justifyContent="center">
