@@ -9,5 +9,3 @@ mongoose
   })
   .then(() => console.log('MongoDB: Connectted')) //hiển thị thông báo kết nối thành công
   .catch((err) => console.log(err.message)); //bắt lỗi nếu không kết nối được
-
-
