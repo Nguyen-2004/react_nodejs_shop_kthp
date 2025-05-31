@@ -121,7 +121,7 @@ function Signin({ history }) {
 
               <Box mt={2} textAlign="right">
                 <Link as={RouterLink} to="/forgot-password" color="teal.500">
-                  Quên mật khẩu?
+                  Quên
                 </Link>
               </Box>
 
