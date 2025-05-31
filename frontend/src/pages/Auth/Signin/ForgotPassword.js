@@ -19,7 +19,7 @@ function ForgotPassword() {
     e.preventDefault();
 
     if (!email.trim()) {
-      alert("Vui lòng nhập email của bạn!");
+      alert("Vui lòng nhập email!");
       return;
     }
 
